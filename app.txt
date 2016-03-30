@@ -3,6 +3,7 @@ APP
 
 try {
    app.init()
+   serviceMail.init()
 } catch(Exception ex) {
    log.error("Esto es un test")
    Sentry.v2.captureException(ex.message())
