@@ -4,5 +4,5 @@ APP
 try {
    app.init()
 } catch(Exception ex) {
-	log.error(ex.message())
+   Sentry.captureException(ex.message())
 }
