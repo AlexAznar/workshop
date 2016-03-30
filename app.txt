@@ -4,5 +4,6 @@ APP
 try {
    app.init()
 } catch(Exception ex) {
-   Sentry.captureException(ex.message())
+   log.error("Esto es un test")
+   Sentry.captureException(ex.message().toString())
 }
