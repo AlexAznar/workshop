@@ -5,5 +5,5 @@ try {
    app.init()
 } catch(Exception ex) {
    log.error("Esto es un test")
-   Sentry2.captureException(ex.message())
+   Sentry.v2.captureException(ex.message())
 }
